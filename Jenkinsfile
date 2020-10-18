@@ -6,6 +6,7 @@ pipeline {
         echo 'testing'
         sh '''cat scripts/build.sh
 ls -l scripts/build.sh
+chmox +x scripts/build.sh
 scripts/build.sh'''
       }
     }
