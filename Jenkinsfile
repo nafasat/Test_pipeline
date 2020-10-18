@@ -8,6 +8,7 @@ pipeline {
 chmod +x scripts/build.sh
 ls -l scripts/build.sh
 scripts/build.sh'''
+        junit 'target/**/.xml'
       }
     }
 
