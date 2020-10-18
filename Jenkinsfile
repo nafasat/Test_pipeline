@@ -6,6 +6,8 @@ pipeline {
         echo 'Building'
         echo 'executing Script'
         sh 'scripts/build.sh'
+        sh '''cat scripts/build.sh
+ls -l scripts/build.sh'''
       }
     }
 
